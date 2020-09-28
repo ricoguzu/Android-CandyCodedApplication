@@ -39,4 +39,11 @@ public void createMapIntent(View view) {
     // ***
     // TODO - Task 3 - Launch the Phone Activity
     // ***
+
+public void createPhoneIntent(View view) {
+        Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
+        Uri phone = Uri.parse("tel:0123456789");
+        phoneIntent.setData(phone);
+        startActivity(phoneIntent);
+}
 }
